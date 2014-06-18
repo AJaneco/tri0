@@ -7,7 +7,6 @@ T = 298.
 N = 2.688e19
 ne = 5.e14
 ppod = 100
-#tm = 1.e-1
 
 reactions=[
   Reaction('O+H+M=OH+M', 4.36e-32), 
@@ -40,6 +39,7 @@ conc_i = {
   'CO2': 0.8,
   'e': ne/N
   }
+
 dens_i={}
 for g in conc_i.keys():
   dens_i[g] = conc_i[g]*N
